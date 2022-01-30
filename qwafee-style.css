@@ -1,0 +1,125 @@
+@media screen and (max-width: 1199px)
+{
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;    
+        font-size: 2em;
+        background-color: black;
+        background-image: url("images/mads-schmidt-rasmussen-xfngap_DToE-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    a
+    {
+        color: black;
+        text-decoration: none;
+    }
+
+    header
+    {
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(20,20,20,1.0);
+        color: whitesmoke;
+        border: solid rgb(20,20,20);
+    }
+
+    h1
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    p
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    input
+    {
+        text-align: center;
+        font-size: 1em;
+        background-color: rgba(20,20,20, 0.2);
+        border-style: none;
+        border: Solid black 3px;
+        margin-bottom: 10px;
+
+    }
+
+    .userSubmit
+    {
+        background-color: rgba(300,300,300, 0.8);
+        color: rgba(20,20,20,1.0);
+        border: solid black;
+    }
+
+    .userSubmit:hover
+    {
+        opacity: 0.3;
+        background-color: rgb(20,20,20);
+        color: whitesmoke;
+    }
+
+    .result
+    {
+        margin-top: 100px;
+    }
+
+    .footer
+    {
+        background-color: white;
+        opacity: 0.5;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .footer:hover
+    {
+        opacity: 1.0;
+        background-color: rgb(20,20,20);
+        color: white;
+    }
+
+    ul
+    {
+         list-style: none;
+         
+    }
+
+    ul li
+    {
+        background-color: white;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul li:hover
+    {
+        color: pink;
+        background-color: black;
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    body
+    {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2em;
+
+        margin-top: 0px;
+        background-color: black;
+        color: white;
+    }
+    input
+    {
+        font-size: 1em;
+    }
+}
