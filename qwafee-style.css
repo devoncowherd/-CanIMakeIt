@@ -111,15 +111,33 @@
 {
     body
     {
+
         font-family: 'Bebas Neue', cursive;
         font-size: 2em;
-
         margin-top: 0px;
         background-color: black;
         color: white;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover
+    {
+        opacity: 0.5;
     }
     input
     {
         font-size: 1em;
     }
+    
+    nav ul 
+    {
+        list-style: none;
+
+    }
+
 }
