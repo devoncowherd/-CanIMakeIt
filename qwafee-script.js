@@ -14,6 +14,8 @@ let userSubmit = document.querySelector(".userSubmit");
 document.getElementById("milesPerGallon").value = milesPerGallon;
 document.getElementById("tankSize").value = tankSize;
 document.getElementById("distance").value = distance;
+let currentTank = document.getElementById("currentTank");
+
 
 //output
 //Good Result: document.getElementById("result").style.backgroundColor = "limegreen";
@@ -21,19 +23,40 @@ document.getElementById("distance").value = distance;
 let result = document.querySelector(".result");
 
 
+function checkTank()
+{
+    currentTankValue = currentTank.value;
+    console.log(currentTankValue);
+    switch(currentTankValue)
+    {
+        case "quadQuad":
+            currentTankValue = 1;
+            break;
+        case "triQuad":
+            currentTankValue = 3/4;
+            break;
+        case "halfQuad":
+            currentTankValue = 1/2;
+            break;
+        case "quarterQuad":
+            currenTankValue = 1/4;
+            break;
+    }
+}
+
 function ask()
 {
     milesPerGallon = document.getElementById("milesPerGallon").value
     tankSize = document.getElementById("tankSize").value;
     distance = document.getElementById("distance").value;
-    cYMI = (milesPerGallon * tankSize) - distance;
+    cYMI = (milesPerGallon * tankSize * currentTankValue ) - distance;
     document.getElementById("result").style.color = "black";
    
 
 
     
     if (isNaN(milesPerGallon) || isNaN(tankSize) || isNaN(distance))
-    {
+    {6
         result.textContent = "Enter Numbers Only";
         document.getElementById("result").style.backgroundColor = "red";
     }
@@ -76,3 +99,4 @@ function ask()
 
 
 userSubmit.addEventListener('click', ask);
+currentTank.addEventListener("change",checkTank);
