@@ -51,7 +51,15 @@
         margin-bottom: 10px;
 
     }
-
+    Select
+    {
+        text-align: center;
+        font-size: 1em;
+        background-color: rgba(20,20,20, 0.2);
+        border-style: none;
+        border: Solid black 3px;
+        margin-bottom: 10px;
+    }
     .userSubmit
     {
         background-color: rgba(300,300,300, 0.8);
